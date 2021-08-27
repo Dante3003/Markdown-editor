@@ -2,6 +2,8 @@
   "extends": "../../tsconfig.json",
   "compilerOptions": {
     "baseUrl": ".",
+    "jsx": "react",
+    "allowSyntheticDefaultImports": true,
     "paths": {
       "/@/*": [
         "./src/*"
@@ -11,11 +13,11 @@
   },
 
   "include": [
-    "src/**/*.vue",
     "src/**/*.ts",
+    "src/**/*.tsx",
     "src/**/*.tsx",
     "types/**/*.d.ts",
     "../../types/**/*.d.ts",
     "../preload/types/electron-api.d.ts"
-  ]
+, "src/helper.js"  ]
 }
